@@ -10,7 +10,7 @@ export class Route {
         if (t < this.getStart() || t > this.getEnd()) {
             return null;
         }
-        var idx = null;
+        let idx = null;
         let payload = null;
         for (let i = 0, l = this.path.length; i < l; i++) {
             if (t < this.path[i][2]) {
@@ -293,10 +293,10 @@ export class RoutePlayer extends maptalks.Eventable(maptalks.Class) {
 
     _setup(rs) {
         const routes = rs.map(r => new Route(r));
-        var start = routes[0].getStart(),
+        let start = routes[0].getStart(),
             end = routes[0].getEnd();
         for (let i = 1; i < routes.length; i++) {
-            let route = routes[i];
+            const route = routes[i];
             if (route.getStart() < start) {
                 start = route.getStart();
             }

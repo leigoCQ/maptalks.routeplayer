@@ -176,24 +176,19 @@ It is written in ES6, transpiled by [babel](https://babeljs.io/) and tested with
 $ npm install
 ```
 
-* Watch source changes and generate runnable bundle repeatedly
-```shell
-$ gulp watch
-```
-
 * Tests
 ```shell
-$ npm test
+$ npm run test
 ```
 
 * Watch source changes and run tests repeatedly
 ```shell
-$ gulp tdd
+$ npm run tdd
 ```
 
 * Package and generate minified bundles to dist directory
 ```shell
-$ gulp minify
+$ npm run build
 ```
 
 * Lint
